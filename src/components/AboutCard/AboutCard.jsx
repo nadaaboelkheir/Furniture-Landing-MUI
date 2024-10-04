@@ -1,7 +1,13 @@
 /* eslint-disable react/prop-types */
 import { Box, Typography, Button } from "@mui/material";
 
-const AboutCard = ({ image, title, description, imagePosition,ButtonText }) => {
+const AboutCard = ({
+  image,
+  title,
+  description,
+  imagePosition,
+  ButtonText,
+}) => {
   return (
     <Box
       sx={{
@@ -9,12 +15,14 @@ const AboutCard = ({ image, title, description, imagePosition,ButtonText }) => {
         alignItems: "center",
         justifyContent: "space-between",
         marginBottom: "40px",
-        flexDirection: { xs: "column", md: imagePosition === "left" ? "row" : "row-reverse" }, // Change direction based on the imagePosition prop
+        backgroundColor:"#fafafa",
+        flexDirection: {
+          xs: "column",
+          md: imagePosition === "left" ? "row" : "row-reverse",
+        }, // Change direction based on the imagePosition prop
       }}
     >
-      
-        <img src={image} alt="" />
-      
+      <img src={image} alt="" style={{ width: "50%" }} />
 
       <Box
         sx={{
@@ -22,9 +30,8 @@ const AboutCard = ({ image, title, description, imagePosition,ButtonText }) => {
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "start",
-          width: "50%",
- 
-       
+          // width: "50%",
+          padding: "80px ",
         }}
       >
         <Typography
@@ -36,9 +43,7 @@ const AboutCard = ({ image, title, description, imagePosition,ButtonText }) => {
         >
           {title}
         </Typography>
-        <Typography variant="h5">
-          {description}
-        </Typography>
+        <Typography variant="h5">{description}</Typography>
         <Button
           variant="contained"
           sx={{
@@ -48,7 +53,8 @@ const AboutCard = ({ image, title, description, imagePosition,ButtonText }) => {
             width: "220px",
           }}
         >
-{ButtonText}        </Button>
+          {ButtonText}{" "}
+        </Button>
       </Box>
     </Box>
   );

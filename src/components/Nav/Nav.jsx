@@ -40,34 +40,40 @@ export default function Nav() {
         }}
       >
         <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 , fontWeight: "bold",fontSize: "2rem" }}>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1, fontWeight: "bold", fontSize: "2rem" }}
+          >
             EQ3
           </Typography>
           <Breadcrumbs aria-label="breadcrumb">
             <Link underline="hover" color="inherit" href="/">
-              <HelpOutlineIcon sx={{ fontSize: "2rem", color: "black" }} />
+              <HelpOutlineIcon sx={{ fontSize: "1.5rem", color: "black" }} />
             </Link>
             <Link
               underline="hover"
               color="inherit"
               href="/material-ui/getting-started/installation/"
             >
-              <FavoriteBorderIcon sx={{ fontSize: "2rem", color: "black" }} />{" "}
+              <FavoriteBorderIcon sx={{ fontSize: "1.5rem", color: "black" }} />{" "}
             </Link>
             <Typography>
-              <PlaceOutlinedIcon sx={{ fontSize: "2rem", color: "black" }} />
+              <PlaceOutlinedIcon sx={{ fontSize: "1.5rem", color: "black" }} />
             </Typography>
-            <Box sx={{ display: "flex", gap: "5px" ,alignItems: "center"}}>
-              <PersonIcon sx={{ fontSize: "2rem", color: "black" }} />
+            <Box sx={{ display: "flex", gap: "5px", alignItems: "center" }}>
+              <PersonIcon sx={{ fontSize: "1.5rem", color: "black" }} />
               <Typography>Join / Login to EQ3</Typography>
             </Box>
-            <Box sx={{ display: "flex", gap: "5px",alignItems: "center" }}>
-              <LanguageOutlinedIcon sx={{ fontSize: "2rem", color: "black" }}/>
+            <Box sx={{ display: "flex", gap: "5px", alignItems: "center" }}>
+              <LanguageOutlinedIcon
+                sx={{ fontSize: "1.5rem", color: "black" }}
+              />
               <Typography>EN / CAD</Typography>
             </Box>
-            <Button variant="outlined" color="inherit" >
+            <Button variant="outlined" color="inherit">
               {" "}
-              <ShoppingCartOutlinedIcon sx={{  color: "black" }} /> Cart (0)
+              <ShoppingCartOutlinedIcon sx={{ color: "black" }} /> Cart (0)
             </Button>
           </Breadcrumbs>{" "}
         </Toolbar>
@@ -78,7 +84,8 @@ export default function Nav() {
         sx={{
           backgroundColor: "white",
           color: "black",
-          borderBottom: ".5px solid #afafaf",          height: 70,
+          borderBottom: ".5px solid #afafaf",
+          height: 70,
           justifyContent: "center",
         }}
       >
@@ -97,7 +104,7 @@ export default function Nav() {
               border: "1px solid #afafaf",
               height: "100%",
               padding: "0 10px",
-              width: "20%",
+              width: "18%",
               marginLeft: "auto",
             }}
           >
